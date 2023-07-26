@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export DofusInvoker="/Applications/Dofus.app/Contents/Data/Dofus.app/Contents/Resources/DofusInvoker.swf"
+export DofusInvoker="C:\Users\HP\AppData\Local\Ankama\Dofus\DofusInvoker.swf"
 export selectclass='com.ankamagames.dofus.BuildInfos,com.ankamagames.dofus.network.++,com.ankamagames.jerakine.network.++'
 export config='parallelSpeedUp=0'
 
@@ -9,7 +9,7 @@ cd ..
 
 rm -r sources
 
-/Applications/FFDec.app/Contents/Resources/ffdec.sh \
+"C:\Program Files (x86)\FFDec\ffdec.bat"  \
   -config "$config" \
     -selectclass "$selectclass" \
       -export script \

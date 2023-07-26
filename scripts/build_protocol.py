@@ -46,6 +46,7 @@ def lines(t):
 
 
 def parseVar(name, typename, lines):
+    type = None  # Ajouter une valeur par défaut à la variable 'type'
     if typename in ["Boolean", "ByteArray"]:
         return dict(name=name, length=None, type=typename, optional=False)
     if typename in types:
